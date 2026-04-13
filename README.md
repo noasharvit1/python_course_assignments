@@ -1,1 +1,2 @@
-https://github.com/noasharvit1/noasharvit1.github.io.git
+Link to the repository of the course:
+https://github.com/Code-Maven/wis-python-course-2026-03/
