@@ -23,11 +23,6 @@ A window will appear. Enter your values into the text boxes and click the Calcul
 
 ## AI Interaction
 I used Gemini https://gemini.google.com/u/1/app?pli=1
-I am an MSc student in Chemistry, and I am currently taking a course in Python. 
-
-I wrote a function that calculates the concentration of a solution using Beer Lambert Law. I have included a file called `Beer_Lambert_law.py` with my code. 
-
-I received an assignment with the following tasks:
 
 I am an MSc student in chemistry, and I am currently taking a course in Python. I wrote a function that calculates the concentration of a solution using Beer-Lambert's Law. I have included the script I wrote in Python.
 
@@ -38,4 +33,4 @@ I would like help implementing the following tasks:
 2. I need to run the calculation in three different ways using the shared library. Each version should allow for different user interactions:
    - One version that uses standard input (the `input` function).
    - One version that uses the command line (the `sys.argv` list).
-   - One version that uses a GUI (you can use Tkinter, which we studied in class, or another library).
+   - One version that uses a GUI (you can use Tkinter or another library).
