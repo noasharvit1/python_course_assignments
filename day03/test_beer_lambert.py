@@ -10,7 +10,7 @@ def test_logic():
     assert calculate_concentration(0.5, 500, 1.0) == 0.001
 
     # Test Case 3: Realistic chemical values
-    # A=0.005, e=100, l=1.2 -> c=0.000041
+    # A=0.05, e=100, l=1 -> c=0.0005
     assert calculate_concentration(0.05, 100, 1) == 0.0005
     
     print("All tests passed!")
