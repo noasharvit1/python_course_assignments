@@ -4,7 +4,7 @@ def calculate_concentration():
     try:
         # Collecting inputs from the user
         # We use float() to ensure the inputs can handle decimals
-        absorbance = float(input("Enter the measured absorbance (A): "))
+        absorbance = float(input("Enter the measured absorbance (A): ")) 
         epsilon = float(input("Enter the molar extinction coefficient (ε) in L/(mol·cm): "))
         path_length = float(input("Enter the path length (l) in cm [usually 1.0]: "))
 

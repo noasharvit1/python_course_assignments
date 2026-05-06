@@ -4,6 +4,12 @@
 This project is a computational tool designed to calculate the molar concentration of a solution based on the Beer-Lambert Law. The calculation is performed using the following formula: 
 **A = εcl**
 
+units:
+A = unitless
+ε = M^-1 * cm^-1
+C = M 
+l = cm
+
 ## Structure
 - `beer_lambert_lib.py`: This file contains the logic for the calculation (Shared Library).
 - `main_input.py`: Interactive terminal version.
