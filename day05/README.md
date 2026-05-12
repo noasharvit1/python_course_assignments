@@ -27,6 +27,9 @@ The following libraries are required:
 * python analysis.py
 This will produce a file named epr_analysis_results.png which contains a 2x3 grid of subplots (Dark vs. Light conditions across 3 capillaries).
 
+## Output Structure
+* The script will create a PNG file named epr_analysis_results.png in the folder where you run the script. I added the results from the example file I used.
+
 ## AI Assistant
 Gemini https://gemini.google.com/u/1/app?pli=1
 * I am working on a Python assignment to analyze EPR (Electron Paramagnetic Resonance) data. I need to determine if radicals are formed in my system by comparing two different chemical setups under "Dark" and "Light" conditions.
