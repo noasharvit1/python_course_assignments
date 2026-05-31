@@ -29,7 +29,7 @@ Compared to the previous versions, this update introduces a modern Web Applicati
 - `test_beer_lambert.py`: Verification tests for the core business logic.           
 
 ## How to use
-1. **nstall required packages:**
+1. **install required packages:**
 pip install -r requirements.txt
 
 2. **Web Application (FastAPI) - Recommended**

@@ -8,7 +8,7 @@ app = FastAPI(title="Beer-Lambert Web App")
 @app.get("/", response_class=HTMLResponse)
 def get_home():
     """
-    Serves the main HTML form for user input.
+    Serves the main HTML form for user input, now including units and placeholders.
     """
     return """
     <html>
@@ -17,25 +17,29 @@ def get_home():
             <style>
                 body { font-family: Arial, sans-serif; margin: 40px; }
                 .container { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
-                input { margin-bottom: 10px; width: 100%; padding: 5px; }
-                button { padding: 10px; width: 100%; background-color: #007bff; color: white; border: none; cursor: pointer; }
+                /* Added box-sizing so the inputs don't stretch past the container edge */
+                input { margin-bottom: 15px; width: 100%; padding: 8px; box-sizing: border-box; }
+                button { padding: 10px; width: 100%; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px; }
                 button:hover { background-color: #0056b3; }
+                .unit { font-size: 0.85em; color: #555; font-style: italic; }
             </style>
         </head>
         <body>
             <div class="container">
                 <h2>Beer-Lambert Calculator</h2>
                 <form action="/calculate" method="post">
-                    <label>Absorbance (A):</label><br>
-                    <input type="text" name="a" required><br>
                     
-                    <label>Epsilon (ε):</label><br>
-                    <input type="text" name="e" required><br>
+                    <label>Absorbance (A) <span class="unit">[Unitless]</span>:</label><br>
+                    <input type="text" name="a" required placeholder="e.g., 0.5"><br>
                     
-                    <label>Path Length (l):</label><br>
-                    <input type="text" name="l" required><br>
+                    <label>Epsilon (ε) <span class="unit">[M<sup>-1</sup> cm<sup>-1</sup>]</span>:</label><br>
+                    <input type="text" name="e" required placeholder="e.g., 500"><br>
+                    
+                    <label>Path Length (l) <span class="unit">[cm]</span>:</label><br>
+                    <input type="text" name="l" required placeholder="e.g., 1.0"><br>
                     
                     <button type="submit">Calculate</button>
+                    
                 </form>
             </div>
         </body>
