@@ -64,4 +64,19 @@ No external libraries are strictly required as it utilizes the built-in math, sy
 ## AI Interaction
 I used Gemini https://gemini.google.com/u/1/app?pli=1
 
+"I'm currently an MSc student in chemistry, and I'm taking a course in Python. I received the following task:
+
+Choose one of your projects so far that includes a "business logic" component that is tested.
+
+Develop a web application for this project. While you can use Flask, it would be preferable to utilize one of the other web frameworks in Python.
+
+Ensure that the web application uses the same "business logic" functions as your original project.
+
+Write test cases for the web application as well.
+
+I uploaded one of the tasks I completed during the semester - a program that uses the Beer-Lambert Law to calculate the concentration of a solution based on the UV absorption of that solution. 
+
+Please help me implement the task using this project."
+
+
 
