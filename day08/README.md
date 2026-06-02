@@ -58,8 +58,6 @@ To ensure the math logic and web routes are functioning correctly, you can run t
 To test the web app: pytest test_web.py -v
 
 To test the core logic: pytest test_beer_lambert.py -v
-## Requirements
-No external libraries are strictly required as it utilizes the built-in math, sys, and tkinter modules.
 
 ## AI Interaction
 I used Gemini https://gemini.google.com/u/1/app?pli=1
