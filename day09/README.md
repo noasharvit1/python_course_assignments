@@ -29,7 +29,20 @@ day09/
 ```
 
 ---
+## How the Code Works & Key Results
 
+### 1. Data Pipeline & Chemistry Focus
+The script does not evaluate a single molecule, but rather a dynamic cohort of **5,000 small organic molecules** sampled from the public QM9 chemical database. These molecules represent the constitutional landscape of small organic matter, limited to **up to 9 heavy atoms** (Carbon, Nitrogen, Oxygen, and Fluorine) balanced with Hydrogen. 
+
+### 2. Output and Visualizations
+Upon a successful run, the code automatically populates the `outputs/` folder with two comprehensive diagnostic figures:
+
+* **`eda_plots.png` (Exploratory Data Analysis):** 
+  Provides an initial bird's-eye view of your dataset's chemical profile. It includes distribution histograms for the target HOMO-LUMO gaps and molecule sizes, elemental composition averages, and a cross-correlation matrix mapping which simple geometric features exhibit the strongest linear relationships with the electronic gap.
+  
+* **`model_results.png` (Model Performance Metrics):** 
+  Contains regression **Parity Plots** comparing the actual quantum-chemical gap values directly against the machine-learned predictions. Tight alignments along the diagonal dashed ideal line validate a highly predictive model[cite: 1]. It also contains a **Residual Plot** to screen for any uncaptured structural non-linear biases, alongside a **Feature Importance Chart** revealing which specific elemental or topological descriptors influenced the algorithms' predictions the most.
+---
 ## Prerequisites
 
 - Python 3.10 or 3.11 (recommended)
